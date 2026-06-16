@@ -2,24 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Naqafin Privacy Policy</title>
+  <style>
+    body {
+      color: #222;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      margin: 0 auto;
+      max-width: 820px;
+      padding: 32px 20px;
+    }
+    h1, h2 {
+      line-height: 1.2;
+    }
+    h1 {
+      margin-bottom: 0;
+    }
+    .updated {
+      color: #555;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 <body>
   <h1>Naqafin Privacy Policy</h1>
-  <p>Last updated: June 15, 2026</p>
+  <p class="updated">Effective date: June 16, 2026</p>
 
-  <p>Naqafin is a personal beta Roku client used to connect to a Jellyfin media server.</p>
+  <p>
+    Naqafin is an unofficial Roku client for Jellyfin-compatible media servers. The app lets you connect your Roku device to a media server that you configure. Naqafin does not provide media content, hosted accounts, subscriptions, or a hosted media service.
+  </p>
 
-  <p>Naqafin does not sell personal information, display ads, or use third-party analytics or tracking services.</p>
+  <h2>Summary</h2>
+  <p>
+    Naqafin does not sell personal information, display ads, or include third-party analytics SDKs. Naqafin does not operate a backend service that receives your media library, viewing activity, Jellyfin credentials, authentication tokens, crash reports, or diagnostics from the app.
+  </p>
+  <p>
+    The app communicates with the Jellyfin-compatible server that you choose. Your server controls the media library, user accounts, metadata, playback history, plugins, and related data available through the app. Roku may separately collect device, platform, usage, crash, or diagnostic information under Roku's own privacy policies.
+  </p>
 
-  <p>The app may store and use information needed to connect to the Jellyfin server you configure, such as server address, user account information, authentication tokens, playback state, and media library data returned by that server.</p>
+  <h2>Information Naqafin Handles</h2>
+  <p>
+    To work as a media client, Naqafin may handle the following information on your Roku device and in communications with your configured server:
+  </p>
+  <ul>
+    <li>Server connection details, such as the server URL you enter and saved server entries.</li>
+    <li>Jellyfin user information returned by your server, such as user ID, username, profile image, policy, and display preferences.</li>
+    <li>Authentication information for your Jellyfin server. Your password is used to authenticate with your server. If you choose to save credentials or stay signed in, Naqafin stores the server-issued authentication token and username in Roku on-device registry storage.</li>
+    <li>Media library information returned by your server, including titles, metadata, artwork URLs, library structure, playlists, favorites, watched status, resume position, subtitles, audio tracks, and playback options.</li>
+    <li>Playback session data needed for streaming, resume, transcoding, direct play, playlists, subtitle selection, playback progress, and server session reporting.</li>
+    <li>Roku device information needed for playback and server compatibility, such as device model, display mode, codec capabilities, locale, caption settings, and a Roku channel client identifier used as a device ID when communicating with your server.</li>
+    <li>App settings saved on the Roku device, such as playback, subtitle, library, appearance, and home screen preferences.</li>
+  </ul>
 
-  <p>Your Jellyfin server controls the media library, account data, metadata, playback history, and related information available through the app.</p>
+  <h2>Where Information Is Stored</h2>
+  <p>
+    Naqafin stores app settings, saved server entries, saved usernames, and saved server authentication tokens in Roku on-device registry storage. This storage is local to the Roku app environment. Naqafin also may use temporary Roku storage for transient playback assets such as trickplay images or downloaded fallback fonts requested from your server.
+  </p>
+  <p>
+    Naqafin does not store your Jellyfin password after authentication. If you save your login, Naqafin stores the authentication token issued by your Jellyfin-compatible server, not the password itself.
+  </p>
 
-  <p>Roku may collect device, platform, and usage information under Roku's own privacy policies.</p>
+  <h2>Information Sent to Your Server</h2>
+  <p>
+    Naqafin sends requests to the Jellyfin-compatible server you configure. These requests may include your server authentication token, Jellyfin user ID, device/client information, device playback capabilities, playback progress, selected media IDs, search/filter choices, playlist actions, favorite and watched-state actions, subtitle actions, and other information needed for the feature you use.
+  </p>
+  <p>
+    If you use server-generated caption features, Naqafin requests caption sessions from your configured server and reads caption data from server-provided WebVTT endpoints. If your server is configured to use an optional remote caption worker, that server-side workflow is controlled by your server configuration. Naqafin talks to the Jellyfin server API and does not contact the caption worker directly.
+  </p>
 
-  <p>Naqafin is not affiliated with, endorsed by, or sponsored by Jellyfin or Roku.</p>
+  <h2>Information Sent to Naqadata</h2>
+  <p>
+    Naqafin does not send media library data, viewing history, credentials, authentication tokens, analytics, telemetry, crash logs, or diagnostics to Naqadata from the Roku app.
+  </p>
+  <p>
+    If you contact Naqadata for support, submit a GitHub issue, send logs, or otherwise provide information voluntarily, Naqadata may receive and use that information to respond to your request, investigate issues, and improve the app.
+  </p>
 
-  <p>Contact: naqadata@gmail.com</p>
+  <h2>Roku Platform Data</h2>
+  <p>
+    Naqafin runs on the Roku platform. Roku may collect information about your device, installed channels, channel usage, crashes, performance, diagnostics, and other platform activity under Roku's privacy policies and account settings. Naqafin also uses Roku platform features required for normal channel operation and performance signaling. Naqadata does not control Roku's data practices.
+  </p>
+
+  <h2>Third Parties</h2>
+  <p>
+    Naqafin does not include advertising networks, third-party analytics SDKs, or in-app purchases. The app does not sell or rent personal information.
+  </p>
+  <p>
+    Your configured Jellyfin-compatible server, server plugins, metadata providers, subtitle providers, remote workers, reverse proxies, hosting providers, and network services may have their own privacy and logging practices. Those systems are controlled by you or the server operator, not by Naqafin.
+  </p>
+  <p>
+    The policy pages for Naqafin may be hosted on GitHub Pages. GitHub may process access logs and related information under GitHub's own privacy practices.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Naqafin supports connecting to servers over HTTPS and uses the Roku platform certificate store for HTTPS requests. You are responsible for configuring and securing your server, network, domain, certificates, user accounts, passwords, authentication tokens, and server plugins.
+  </p>
+  <p>
+    You should only connect Naqafin to servers you own, administer, or are authorized to access. If you no longer trust a Roku device, server, or account, revoke the relevant server sessions or tokens from your Jellyfin-compatible server and remove saved data from the Roku app or device.
+  </p>
+
+  <h2>Your Choices</h2>
+  <ul>
+    <li>You can choose which server to connect to.</li>
+    <li>You can choose whether to save your login where the app offers that option.</li>
+    <li>You can sign out or remove saved users to delete saved authentication tokens from the app's local Roku storage.</li>
+    <li>You can remove the channel or factory reset the Roku device to clear app data according to Roku platform behavior.</li>
+    <li>You can manage users, sessions, tokens, libraries, metadata, plugins, and playback history on your Jellyfin-compatible server.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>
+    Naqafin is not directed to children. The app displays media and metadata from the server you configure. Parents and server administrators are responsible for configuring user access, parental controls, libraries, and content restrictions on their server and Roku account.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    This Privacy Policy may be updated from time to time. Updates will be posted at this page with a new effective date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    For questions about this Privacy Policy or Naqafin, use the Naqafin project page or issue tracker at <a href="https://github.com/naqadata/naqafin-roku">https://github.com/naqadata/naqafin-roku</a>.
+  </p>
+
+  <h2>Unaffiliated Projects</h2>
+  <p>
+    Naqafin is not affiliated with, endorsed by, or sponsored by Jellyfin or Roku. Jellyfin is a trademark of the Jellyfin project. Roku is a trademark of Roku, Inc.
+  </p>
 </body>
 </html>
